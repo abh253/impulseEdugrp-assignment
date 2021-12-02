@@ -10,8 +10,7 @@ import { AppContext } from '../Context'
 import { Link } from 'react-router-dom'
 const Sidebar = () => {
     
-    
-    const {sidebarOpen,setSidebarOpen,setPage}=useContext(AppContext);
+    const {sidebarOpen,setSidebarOpen}=useContext(AppContext);
     return (
         <div className={ `${sidebarOpen?'sidebar-open sidebar':'sidebar-close sidebar' }`}>
             <header className='flex'>
@@ -19,8 +18,8 @@ const Sidebar = () => {
             <button type='button' className='times' onClick={()=>setSidebarOpen(!sidebarOpen)}><FaTimes/></button>
             </header>
             <ul>
-                <li onClick={()=>setPage('home')}><FaHome className="margin-x-1"/> Home</li>
-                <li onClick={()=>setPage('trans')}><GrTransaction className="margin-x-1"/> Transactions</li>
+                <Link to='/'><li><FaHome className="margin-x-1"/> Home</li></Link>
+                <Link to='/trans'><li><GrTransaction className="margin-x-1"/> Transactions</li></Link>
                 <li><FaPaperPlane className="margin-x-1"/> Subcription Plans</li>
                 <li><BsCheckAll className="margin-x-1"/> Settelement</li>
                 <li><BiErrorAlt className="margin-x-1"/> Disputes</li>
