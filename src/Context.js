@@ -6,6 +6,8 @@ const AppContext=React.createContext();
 
 
 const AppProvider = ({children}) => {
+    
+    const [page ,setPage]=useState('home');
     const [sidebarOpen,setSidebarOpen]=useState(true);
     
     const handleResize=()=>{
@@ -66,7 +68,7 @@ const AppProvider = ({children}) => {
 
     window.addEventListener('resize',handleResize);
     return (
-        <AppContext.Provider value={{...filterState,sidebarOpen, setSidebarOpen,changeHandler,transactions}}>
+        <AppContext.Provider value={{...filterState,sidebarOpen, setSidebarOpen,changeHandler,transactions,page,setPage}}>
         {children}
         </AppContext.Provider>
     )
