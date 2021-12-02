@@ -18,7 +18,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route exact path='/' element={<Home/>}/>
-            <Route exact path='/trans' element={<Transactions/>}/>
+            <Route path='/trans' element={<Transactions/>}/>
           </Routes>
 
           {/* <Transactions/> */}
