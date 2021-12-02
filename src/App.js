@@ -14,14 +14,16 @@ import Transactions from './Transactions';
 function App() {
   return (  
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Sidebar />
         <div className='main-scr'>
           <Navbar />
           <Routes>
             <Route exact path='/' element={<Home/>}/>
-            <Route exact path='/trans' element={<Transactions/>}/>
+            <Route path='/trans' element={<Transactions/>}/>
           </Routes>
+
+          {/* <Transactions/> */}
         </div>
       </Router>
     </>
