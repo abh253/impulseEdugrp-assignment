@@ -19,13 +19,13 @@ const Sidebar = () => {
             </header>
             <ul>
                 <Link to='/'><li><FaHome className="margin-x-1"/> Home</li></Link>
-                <Link to='/transactions'><li><GrTransaction className="margin-x-1"/> Transactions</li></Link>
+                <Link to='/trans'><li><GrTransaction className="margin-x-1"/> Transactions</li></Link>
                 <li><FaPaperPlane className="margin-x-1"/> Subcription Plans</li>
                 <li><BsCheckAll className="margin-x-1"/> Settelement</li>
                 <li><BiErrorAlt className="margin-x-1"/> Disputes</li>
                 <li><GiReturnArrow className="margin-x-1"/> Refunds</li>
                 <li><BsPeopleFill className="margin-x-1"/> Customers</li>
-                <li><FaGift className="margin-x-1"/> Offers</li>
+                <li><FaGift className="margin-x-1"/> Offers</li> 
                 <li><MdLocalOffer className="margin-x-1"/> Reward Points</li>
                 <li><MdAccountCircle className="margin-x-1"/> My Account</li>
                 <li><AiTwotoneSetting className="margin-x-1"/> Setting</li>

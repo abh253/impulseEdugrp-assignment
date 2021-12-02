@@ -12,7 +12,7 @@ import {
 import Transactions from './Transactions';
 
 function App() {
-  return (
+  return (  
     <>
       <Router>
         <Sidebar />
@@ -20,7 +20,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route exact path='/' element={<Home/>}/>
-            <Route exact path='/transactions' element={<Transactions/>}/>
+            <Route exact path='/trans' element={<Transactions/>}/>
           </Routes>
         </div>
       </Router>
