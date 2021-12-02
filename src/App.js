@@ -1,0 +1,32 @@
+import './App.css';
+import Home from './Home';
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Transactions from './Transactions';
+
+function App() {
+  return (
+    <>
+      <Router>
+        <Sidebar />
+        <div className='main-scr'>
+          <Navbar />
+          <Routes>
+            <Route exact path='/' element={<Home/>}/>
+            <Route exact path='/transactions' element={<Transactions/>}/>
+          </Routes>
+        </div>
+      </Router>
+    </>
+
+  );
+}
+
+export default App;
