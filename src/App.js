@@ -21,7 +21,8 @@ function App() {
         <Sidebar />
         <div className='main-scr'>
           <Navbar />
-          {page==='home'?<Home/>:<Transactions/>}
+          {page==='home' && <Home/>}
+          {page==='trans' && <Transactions/>}
 
         </div>
     </>
