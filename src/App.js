@@ -14,7 +14,6 @@ import Transactions from './Transactions';
 function App() {
   return (  
     <>
-      <Router>
         <Sidebar />
         <div className='main-scr'>
           <Navbar />
@@ -25,7 +24,6 @@ function App() {
 
           {/* <Transactions/> */}
         </div>
-      </Router>
     </>
 
   );
