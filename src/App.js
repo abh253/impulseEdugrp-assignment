@@ -14,7 +14,7 @@ import Transactions from './Transactions';
 function App() {
   return (  
     <>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Sidebar />
         <div className='main-scr'>
           <Navbar />
