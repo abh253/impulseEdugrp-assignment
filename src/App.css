@@ -317,7 +317,11 @@
     display: none;
   }
   .process{
+    text-align: center;
     flex-direction: column;
+  }
+  .process svg{
+    margin:0;
   }
   .process div{
     width:100%;
@@ -325,6 +329,9 @@
 .home-com-2{
   flex-direction: column;
 
+  }
+  .home-com-3 article{
+    padding: 1rem;
   }
   .filter-form{
     flex-direction: column;
