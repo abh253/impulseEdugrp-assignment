@@ -6,8 +6,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Redirect
+  Route
 } from "react-router-dom";
 import Transactions from './Transactions';
 
@@ -18,7 +17,6 @@ function App() {
         <div className='main-scr'>
           <Navbar />
           <Routes>
-            <Redirect to='/'/>
             <Route exact path='/' element={<Home/>}/>
             <Route exact path='/trans' element={<Transactions/>}/>
           </Routes>
